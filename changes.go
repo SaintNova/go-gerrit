@@ -67,9 +67,9 @@ type ApprovalInfo struct {
 
 // CommitMessageInfo entity contains information about a commit message.
 type CommitMessageInfo struct {
-	Subject     string `json:"subject,omitempty"`
-	FullMessage string `json:"full_message,omitempty"`
-	Footers     string `json:"footers,omitempty"`
+	Subject     string            `json:"subject,omitempty"`
+	FullMessage string            `json:"full_message,omitempty"`
+	Footers     map[string]string `json:"footers,omitempty"`
 }
 
 // CommitMessageInput entity contains information for changing the commit message of a change.
